@@ -251,6 +251,12 @@ a {
   margin: 0;
 }
 
+.entry-head h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
 .entry-dates {
   font-family: var(--font-mono);
   font-size: 0.78rem;
@@ -405,4 +411,29 @@ a:focus-visible,
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .boot { transition: none; }
+}
+
+
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+  margin-left: 18px;
+}
+
+.project-tools span {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-dim);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 5px 11px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.project-tools span:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }

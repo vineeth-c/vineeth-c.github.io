@@ -118,17 +118,38 @@
     <section id="projects" class="section">
       <h2><span class="addr">0x04</span>Projects</h2>
       <div class="entry">
-        <p class="entry-role">STM32 Fault Tolerant Data Logger</p>
+        <h4>Embedded Linux Gateway</h4>
+        <ul>
+          <li>Developing an end-to-end ARM64 Embedded Linux Gateway using QEMU, starting with a custom Linux kernel and BusyBox root filesystem. 
+            The project is designed to integrate U-Boot, Device Tree, Linux device drivers, and a Yocto-based Linux image. It will feature a C++ gateway application for CAN communication, sensor data processing, and network telemetry, with systemd service management, OTA updates, diagnostics, and fault recovery.</li>
+        </ul>
+        <div class = "project-tools">
+          <span>ARM GNU Toolchain</span>
+          <span>Linux Kernel & U-Boot</span>
+          <span>Yocto Project</span>
+          <span>QEMU</span>
+          <span>SocketCAN</span>
+        </div>       
+      </div>
+      <div class="entry">
+        <h4>STM32 Fault Tolerant Data Logger</h4>
         <ul>
           <li>Built a production-oriented bare-metal firmware system for the STM32F103 focused on reliability, deterministic execution, and fault tolerance. The project implements asynchronous UART/I²C/SPI communication, cooperative scheduling, persistent circular logging, CRC-protected binary protocols, 
             watchdog supervision, firmware image validation, and automated host-side testing. It also includes a bootloader/application architecture and CI workflows, while keeping hardware-specific validation clearly separated from host-tested functionality.</li>
         </ul>
-      </div>
+        <div class = "project-tools">
+          <span>STM32 CMSIS</span>
+          <span>CMake & GNU Make</span>
+          <span>GDB & OpenOCD</span>
+          <span>GitHub Actions (CI/CD)</span>
+          <span>SocketCAN</span>
+        </div>
+      </div>      
     </section>
     
     <section id="contact" class="section contact">
       <h2><span class="addr">0x05</span>Contact</h2>
-      <p class="lede">Open to conversations on firmware, board bring‑up, and embedded Linux roles.</p>
+      <p class="lede">Always happy to connect, exchange ideas, and collaborate on exciting embedded systems projects.</p>
       <div class="contact-grid">
         <a href="mailto:vineethadapa590@gmail.com" class="contact-item">
           <span class="reg-key">MAIL</span>vineethadapa590@gmail.com
